@@ -1,0 +1,25 @@
+Exception getting ApparelPaperPattern.Graphic_RenderTextureR1 at Things/Eccentric/Apparel/Undersuits/Nanosuit_Seraphim_Female: System.IndexOutOfRangeException: Index was outside the bounds of the array.
+[Ref C8D2D45C]
+ at ApparelPaperPattern.Graphic_RenderTextureR1.Init (Verse.GraphicRequest req) [0x00022] in <062aa35aa9a14bc59500a385d38c7983>:0 
+     - TRANSPILER rimworld.WRK.APPUtilities: IEnumerable`1 APPUtilities.HarmonyPatch_Graphic_RenderTextureR1_Init_CM:InitTranspiler(IEnumerable`1 codeInstructions, ILGenerator generator)
+ at Verse.GraphicDatabase.GetInner[T] (Verse.GraphicRequest req) [0x000a5] in <69945a8ed6c540cf90b578de735e0605>:0 
+ at (wrapper delegate-invoke) System.Func`2[Verse.GraphicRequest,Verse.Graphic].invoke_TResult_T(Verse.GraphicRequest)
+ at Verse.GraphicDatabase.Get (Verse.GraphicRequest req) [0x00066] in <69945a8ed6c540cf90b578de735e0605>:0 
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+(wrapper dynamic-method) MonoMod.Utils.DynamicMethodDefinition:Verse.Log.Error_Patch5 (string)
+Verse.GraphicDatabase:Get (Verse.GraphicRequest)
+Verse.GraphicDatabase:Get (System.Type,string,UnityEngine.Shader,UnityEngine.Vector2,UnityEngine.Color,UnityEngine.Color,Verse.GraphicData,System.Collections.Generic.List`1<Verse.ShaderParameter>,string)
+Verse.GraphicDatabase:Get (System.Type,string,UnityEngine.Shader,UnityEngine.Vector2,UnityEngine.Color,UnityEngine.Color,string)
+Verse.Graphic:GetCopy (UnityEngine.Vector2,UnityEngine.Shader)
+EccentricFurniture.PawnApparelDrawHelper:.ctor (Verse.Pawn)
+EccentricFurniture.CompRepairCabinetOverlay:DrawBodyApparel (UnityEngine.Vector3&,Verse.Pawn)
+EccentricFurniture.CompRepairCabinetOverlay:PostDraw ()
+Verse.ThingWithComps:Comps_PostDraw ()
+Verse.ThingWithComps:DrawAt (UnityEngine.Vector3,bool)
+Verse.Thing:DynamicDrawPhaseAt (Verse.DrawPhase,UnityEngine.Vector3,bool)
+Verse.Thing:DynamicDrawPhase (Verse.DrawPhase)
+PerformanceFish.Rendering.DynamicDrawManagerPatches/DrawDynamicThingsPatch:DrawThingsNow ()
+Verse.DynamicDrawManager:DrawDynamicThings ()
+(wrapper dynamic-method) MonoMod.Utils.DynamicMethodDefinition:Verse.Map.MapUpdate_Patch2 (Verse.Map)
+(wrapper dynamic-method) MonoMod.Utils.DynamicMethodDefinition:Verse.Game.UpdatePlay_Patch4 (Verse.Game)
+Verse.Root_Play:Update ()
